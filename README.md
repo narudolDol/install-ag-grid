@@ -12,19 +12,15 @@ Create a plugin file named ag-grid.js in the plugins folder of your Nuxt 3 proje
 
 
 ```bash
-// plugins/ag-grid.ts
-
 import { defineNuxtPlugin } from '#app'
 import { AgGridVue } from 'ag-grid-vue3'
 import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-quartz.css'
 import { LicenseManager } from 'ag-grid-enterprise'
 
-// กำหนด License Key สำหรับ ag-Grid Enterprise
 const licenseKey = process.env.AG_GRID_LICENSE_KEY || ''
 LicenseManager.setLicenseKey(licenseKey)
 
-// กำหนด Plugin
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('AgGridVue', AgGridVue)
 })
