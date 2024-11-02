@@ -12,7 +12,7 @@ Create a plugin file named ag-grid.js in the plugins folder of your Nuxt 3 proje
 
 
 ```bash
-// plugins/ag-grid.js
+// plugins/ag-grid.ts
 
 import { defineNuxtPlugin } from '#app'
 import { AgGridVue } from 'ag-grid-vue3'
