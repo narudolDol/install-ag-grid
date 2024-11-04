@@ -7,7 +7,7 @@ npm install ag-grid-vue3 ag-grid-community ag-grid-enterprise ag-grid-charts-ent
 ```
 
 
-## Step 2: Create a Plugin File for ag-Grid
+## Step 2: Create a Plugin File for AG-Grid
 Create a plugin file named ag-grid.ts in the plugins folder of your Nuxt 3 project. This file will register AgGridVue as a global component and configure the AG-Grid license.
 
 
